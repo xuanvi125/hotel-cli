@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$#" -ne 2 ]; then
+  echo "Usage: ./runner <hotel_ids> <destination_ids>"
+  exit 1
+fi
+HOTEL_IDS=$1
+DESTINATION_IDS=$2
+python main.py  "$HOTEL_IDS" "$DESTINATION_IDS"
